@@ -7,7 +7,10 @@ class PostList extends Component {
     <div className="PostList">
       <h1>Hello there</h1>
       {PostData.map((postDetail, index) => {
-          return <h1>{postDetail.title}</h1>
+          return <div>
+          <h1>{postDetail.title}</h1>
+          <p>{postDetail.content}</p>
+          </div>
       })}
     </div>
   );
